@@ -1,0 +1,4 @@
+FROM nginx
+EXPOSE 8080
+COPY ./etc/app.conf /etc/nginx/conf.d/app.conf
+
