@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin page</title>
+    <style>
+      .box {
+        width: 200px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form action='/admin' method='POST'>
+        <label for="login">Login:</label><br>
+        <input type="text" id="login" name="login"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <button type="submit">Login</button>
+      </form> 
+    </div>
+  </body>
+</html>
