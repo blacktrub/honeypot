@@ -1,4 +1,5 @@
 FROM nginx
 EXPOSE 80
+RUN mkdir /var/log/honeypot
 COPY ./etc/app.conf /etc/nginx/conf.d/app.conf
 

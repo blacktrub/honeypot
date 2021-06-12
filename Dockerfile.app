@@ -1,5 +1,6 @@
 FROM python:3.9
 WORKDIR /usr/app/
+RUN mkdir /var/log/honeypot
 RUN pip install flask uwsgi
 ENV FLASK_APP=server
 EXPOSE 5000
