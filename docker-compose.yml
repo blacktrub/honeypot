@@ -1,6 +1,7 @@
 version: "3.3"
 services:
   web:
+    restart: always
     build: 
       context: .
       dockerfile: Dockerfile.app
@@ -9,6 +10,7 @@ services:
     volumes:
       - ./:/var/log/honeypot
   nginx: 
+    restart: always
     build: 
       context: .
       dockerfile: Dockerfile.nginx
