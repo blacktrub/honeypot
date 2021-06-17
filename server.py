@@ -31,6 +31,8 @@ logger = getLogger(__name__)
 
 
 @app.route('/admin', methods=['GET', 'POST'])
+@app.route('/wp-admin', methods=['GET', 'POST'])
+@app.route('/administrator', methods=['GET', 'POST'])
 def admin_page():
     if request.method == 'POST':
         login = request.form['login']
